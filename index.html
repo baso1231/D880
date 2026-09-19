@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/jpeg" href="https://i.im.ge/QQud64z/11769.jpg">
+<title>Q880 - App Download & Promotion</title>
+
+<!-- এসইও এবং গুগল ইনডেক্সের জন্য ডোমেইন প্রপার্টি অপ্টিমাইজেশন -->
+<meta name="description" content="Q880 App Download and Promotion Page with Side Menu. Official site: d880.cam">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://d880.cam/">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at 50% 0%, #4c1d95 0%, #1e1b4b 50%, #090514 100%);
+    background-attachment: fixed;
+    color: #ffffff;
+    max-width: 480px;
+    margin: 0 auto;
+    padding-top: 135px;
+    padding-bottom: 75px;
+    overflow-x: hidden;
+  }
+
+  /* ফিক্সড টপ কন্টেইনার */
+  .fixed-top-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 480px;
+    margin: 0 auto;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.5);
+  }
+
+  /* ১. সবার ওপরের অ্যাপ ডাউনলোড ব্যানার */
+  .app-download-banner {
+    background: linear-gradient(90deg, #310d55 0%, #4a1575 100%);
+    border-bottom: 1.5px solid #6b21a8;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .banner-left-app {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+  }
+
+  .app-icon-img {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1.5px solid #fde047;
+    flex-shrink: 0;
+  }
+
+  .banner-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner-title-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.3;
+  }
+
+  .banner-sub-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #fde047;
+    line-height: 1.3;
+  }
+
+  .banner-right-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* ডান পাশের ইন্সটলেশন বাটন ও ওপরের টেক্সট র‍্যাপার */
+  .install-wrapper {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .install-top-label {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+    color: #fde047;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 1px 5px;
+    border-radius: 6px;
+    border: 1px solid #f59e0b;
+    box-shadow: 0 0 6px rgba(245, 158, 11, 0.5);
+    white-space: nowrap;
+  }
+
+  .btn-install {
+    background: linear-gradient(135deg, #facc15 0%, #eab308 100%);
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 18px;
+    border: 1px solid #fef08a;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(234, 179, 8, 0.6);
+    white-space: nowrap;
+    display: inline-block;
+    animation: pulseGlowInstall 1.5s infinite;
+  }
+
+  @keyframes pulseGlowInstall {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+  }
+
+  .btn-close-banner {
+    background: transparent;
+    border: none;
+    color: #cbd5e1;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 2px 4px;
+  }
+
+  /* ২. মূল হেডার বার */
+  .top-header {
+    background: linear-gradient(90deg, #3b0764 0%, #581c87 50%, #3b0764 100%);
+    backdrop-filter: blur(12px);
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #7c3aed;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-circle-btn {
+    width: 42px;
+    height: 42px;
+    background: radial-gradient(circle, #a855f7 0%, #7c3aed 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 12px rgba(168, 85, 247, 0.8);
+    border: 1px solid #e9d5ff;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .menu-circle-btn:active {
+    transform: scale(0.9);
+  }
+
+  .menu-circle-btn i {
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  .header-logo-img {
+    height: 40px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-login {
+    background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1.5px solid #fbcfe8;
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.6);
+  }
+
+  .register-wrapper {
+    position: relative;
+    margin-top: 8px;
+  }
+
+  .bonus-badge {
+    position: absolute;
+    top: -14px;
+    right: 0;
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+    color: #fde047;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 8px;
+    border: 1px solid #f59e0b;
+    box-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+    white-space: nowrap;
+  }
+
+  .btn-register {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border: 1.5px solid #fde68a;
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.8);
+    animation: pulseGlow 1.5s infinite;
+  }
+
+  @keyframes pulseGlow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+  }
+
+  /* সাইড মেনু স্টাইল */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    max-width: 480px;
+    margin: 0 auto;
+    right: 0;
+  }
+  
+  .menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(180deg, #3b0764 0%, #1e1b4b 100%);
+    z-index: 2001;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #7c3aed;
+  }
+
+  .side-menu.open {
+    left: 0;
+  }
+  
+  @media (min-width: 481px) {
+    .side-menu {
+       left: calc(50% - 240px - 250px);
+    }
+    .side-menu.open {
+       left: calc(50% - 240px);
+    }
+  }
+
+  .menu-header {
+    padding: 20px 15px;
+    background: rgba(88, 28, 135, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #9333ea;
+  }
+
+  .menu-header img {
+    height: 35px;
+    object-fit: contain;
+  }
+
+  .btn-close-menu {
+    background: none;
+    border: none;
+    color: #fde047;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-links {
+    list-style: none;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-links li {
+    padding: 0 15px;
+    margin-bottom: 5px;
+  }
+
+  .menu-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .menu-links a i {
+    font-size: 18px;
+    color: #a855f7;
+    width: 20px;
+    text-align: center;
+  }
+
+  .menu-links a:hover {
+    background: rgba(124, 58, 237, 0.4);
+    color: #fde047;
+  }
+
+  .menu-links .app-link {
+    background: linear-gradient(90deg, rgba(236, 72, 153, 0.2) 0%, rgba(124, 58, 237, 0.3) 100%);
+    border: 1px solid #d946ef;
+  }
+  
+  .menu-links .app-link i {
+    color: #f472b6;
+  }
+
+  /* মেইন কন্টেইনার */
+  .content-container {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .promo-card {
+    background: linear-gradient(135deg, rgba(76, 29, 149, 0.6) 0%, rgba(30, 27, 75, 0.9) 100%);
+    backdrop-filter: blur(10px);
+    border: 2px solid #9333ea;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.3), inset 0 0 10px rgba(168, 85, 247, 0.2);
+  }
+
+  .banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #c084fc;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    text-decoration: none;
+  }
+
+  .details-toggle-btn {
+    width: 100%;
+    background: rgba(46, 16, 101, 0.8);
+    color: #fde047;
+    border: 1px solid #a855f7;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+  }
+
+  .details-toggle-btn:hover {
+    background: rgba(91, 33, 182, 0.9);
+  }
+
+  .details-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: rgba(15, 10, 35, 0.95);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .details-body {
+    padding: 12px;
+    font-size: 12px;
+    color: #e2e8f0;
+    line-height: 1.6;
+    border: 1px solid #7c3aed;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+  }
+
+  /* বটম নেভবার */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 480px;
+    margin: 0 auto;
+    background: rgba(20, 15, 45, 0.95);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0;
+    border-top: 2px solid #7c3aed;
+    z-index: 1000;
+    box-shadow: 0 -5px 20px rgba(124, 58, 237, 0.4);
+  }
+
+  .nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: #a78bfa;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    flex: 1;
+    transition: color 0.3s;
+  }
+
+  .nav-item i {
+    font-size: 18px;
+  }
+
+  .nav-item.active {
+    color: #f59e0b;
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.8);
+  }
+</style>
+</head>
+<body>
+
+<div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+
+<nav class="side-menu" id="sideMenu">
+  <div class="menu-header">
+    <a href="https://d8804.com?a=63247430"><img src="https://i.im.ge/QQud64z/11769.jpg" alt="Logo"></a>
+    <button class="btn-close-menu" onclick="closeMenu()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  
+  <ul class="menu-links">
+    <li>
+      <a href="https://d8804.com?a=63247430">
+        <i class="fa-solid fa-house"></i> হোম পেজ
+      </a>
+    </li>
+    
+    <li>
+      <a href="app.html" class="app-link">
+        <i class="fa-solid fa-mobile-screen"></i> App (অ্যাপ)
+      </a>
+    </li>
+    
+    <li>
+      <a href="https://d8804.com?a=63247430">
+        <i class="fa-solid fa-gift"></i> বোনাস
+      </a>
+    </li>
+    <li>
+      <a href="https://d8804.com?a=63247430">
+        <i class="fa-solid fa-piggy-bank"></i> রিচার্জ
+      </a>
+    </li>
+    <li>
+      <a href="https://d8804.com?a=63247430">
+        <i class="fa-solid fa-headset"></i> কাস্টমার সার্ভিস
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="fixed-top-container" id="topContainer">
+  
+  <div class="app-download-banner" id="appBanner">
+    <div class="banner-left-app">
+      <a href="https://d8804.com?a=63247430"><img src="https://i.im.ge/QQud64z/11769.jpg" alt="App Icon" class="app-icon-img"></a>
+      <div class="banner-text-content">
+        <span class="banner-title-text">আমাদের অ্যাপ ডাউনলোড করুন,</span>
+        <span class="banner-sub-text">জিতুন সুপার পুরস্কার!</span>
+      </div>
+    </div>
+    <div class="banner-right-actions">
+      <div class="install-wrapper">
+        <div class="install-top-label">অ্যাপ ডাউনলোড</div>
+        <a href="https://d8804.com?a=63247430" class="btn-install">ইনস্টলেশন</a>
+      </div>
+      <button class="btn-close-banner" onclick="closeAppBanner()" title="বন্ধ করুন">×</button>
+    </div>
+  </div>
+
+  <header class="top-header">
+    <div class="header-left">
+      <button class="menu-circle-btn" onclick="openMenu()" title="মেনু খুলুন">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+      <a href="https://d8804.com?a=63247430">
+        <img src="https://i.im.ge/QQrSP1X/11371.png" alt="Logo" class="header-logo-img">
+      </a>
+    </div>
+
+    <div class="header-right">
+      <a href="https://d8804.com?a=63247430" class="btn-login">লগইন</a>
+      <div class="register-wrapper">
+        <div class="bonus-badge">৳ +20~88,888</div>
+        <a href="https://d8804.com?a=63247430" class="btn-register">নিবন্ধন</a>
+      </div>
+    </div>
+  </header>
+
+</div>
+
+<div class="content-container">
+
+  <!-- প্রমোশন কার্ড ১ (im.ge-তে আপলোড করে প্রাপ্ত ডিরেক্ট লিংক এখানে বসান) -->
+  <div class="promo-card">
+    <a href="https://d8804.com?a=63247430"><img src="[১ম_ছবির_ডিরেক্ট_লিংক_এখানে_দিন]" alt="Banner 1" class="11770_2png"></a>
+    <button class="details-toggle-btn" onclick="toggleDetails(this)">
+      <span>🔍 স্পেশাল অফার ১</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="details-content">
+      <div class="details-body">
+        <b>নিয়মাবলী:</b> এটি প্রথম অফারের বিবরণ ও নিয়মাবলী।
+      </div>
+    </div>
+  </div>
+
+  <!-- প্রমোশন কার্ড ২ (im.ge-তে আপলোড করে প্রাপ্ত ডিরেক্ট লিংক এখানে বসান) -->
+  <div class="promo-card">
+    <a href="https://d8804.com?a=63247430"><img src="[২য়_ছবির_ডিরেক্ট_লিংক_এখানে_দিন]" alt="Banner 2" class="banner-img"></a>
+    <button class="details-toggle-btn" onclick="toggleDetails(this)">
+      <span>🔍 স্পেশাল অফার ২</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="details-content">
+      <div class="details-body">
+        <b>নিয়মাবলী:</b> এটি দ্বিতীয় অফারের বিবরণ ও নিয়মাবলী।
+      </div>
+    </div>
+  </div>
+
+  <!-- প্রমোশন কার্ড ৩ (im.ge-তে আপলোড করে প্রাপ্ত ডিরেক্ট লিংক এখানে বসান) -->
+  <div class="promo-card">
+    <a href="https://d8804.com?a=63247430"><img src="[৩য়_ছবির_ডিরেক্ট_লিংক_এখানে_দিন]" alt="Banner 3" class="banner-img"></a>
+    <button class="details-toggle-btn" onclick="toggleDetails(this)">
+      <span>🔍 স্পেশাল অফার ৩</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="details-content">
+      <div class="details-body">
+        <b>নিয়মাবলী:</b> এটি তৃতীয় অফারের বিবরণ ও নিয়মাবলী।
+      </div>
+    </div>
+  </div>
+
+  <!-- প্রমোশন কার্ড ৪ (im.ge-তে আপলোড করে প্রাপ্ত ডিরেক্ট লিংক এখানে বসান) -->
+  <div class="promo-card">
+    <a href="https://d8804.com?a=63247430"><img src="[৪র্থ_ছবির_ডিরেক্ট_লিংক_এখানে_দিন]" alt="Banner 4" class="banner-img"></a>
+    <button class="details-toggle-btn" onclick="toggleDetails(this)">
+      <span>🔍 স্পেশাল অফার ৪</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="details-content">
+      <div class="details-body">
+        <b>নিয়মাবলী:</b> এটি চতুর্থ অফারের বিবরণ ও নিয়মাবলী।
+      </div>
+    </div>
+  </div>
+
+  <!-- প্রমোশন কার্ড ৫ (im.ge-তে আপলোড করে প্রাপ্ত ডিরেক্ট লিংক এখানে বসান) -->
+  <div class="promo-card">
+    <a href="https://d8804.com?a=63247430"><img src="[৫ম_ছবির_ডিরেক্ট_লিংক_এখানে_দিন]" alt="Banner 5" class="banner-img"></a>
+    <button class="details-toggle-btn" onclick="toggleDetails(this)">
+      <span>🔍 স্পেশাল অফার ৫</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="details-content">
+      <div class="details-body">
+        <b>নিয়মাবলী:</b> এটি পঞ্চম অফারের বিবরণ ও নিয়মাবলী।
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="bottom-nav">
+  <a href="https://d8804.com?a=63247430" class="nav-item">
+    <i class="fa-solid fa-dice"></i>
+    <span>গেম</span>
+  </a>
+  <a href="https://d8804.com?a=63247430" class="nav-item active">
+    <i class="fa-solid fa-gift"></i>
+    <span>বোনাস</span>
+  </a>
+  <a href="https://d8804.com?a=63247430" class="nav-item">
+    <i class="fa-solid fa-box-open"></i>
+    <span>আমন্ত্রণ</span>
+  </a>
+  <a href="https://d8804.com?a=63247430" class="nav-item">
+    <i class="fa-solid fa-piggy-bank"></i>
+    <span>রিচার্জ</span>
+  </a>
+  <a href="https://d8804.com?a=63247430" class="nav-item">
+    <i class="fa-solid fa-user-circle"></i>
+    <span>আমার</span>
+  </a>
+</div>
+
+<script>
+  function toggleDetails(btn) {
+    let content = btn.nextElementSibling;
+    let icon = btn.querySelector(".fa-chevron-down");
+    
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      if(icon) icon.style.transform = "rotate(0deg)";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      if(icon) icon.style.transform = "rotate(180deg)";
+    }
+  }
+
+  function closeAppBanner() {
+    const banner = document.getElementById('appBanner');
+    if (banner) {
+      banner.style.display = 'none';
+      document.body.style.paddingTop = '75px'; 
+    }
+  }
+
+  function openMenu() {
+    document.getElementById('sideMenu').classList.add('open');
+    document.getElementById('menuOverlay').classList.add('active');
+  }
+
+  function closeMenu() {
+    document.getElementById('sideMenu').classList.remove('open');
+    document.getElementById('menuOverlay').classList.remove('active');
+  }
+</script>
+
+</body>
+</html>
